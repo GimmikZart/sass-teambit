@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//-------------------------------------------
+
+header {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  // debug
+  height: 50px;
+  background-color: red;
+}
+
+//-------------------------------------------
+
+#jumbotron {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  //debug
+  background-color: orange;
+  height: 300px;
+
+  .left , .right {
+    width: 50%;
+    height: 100%;
+    //debug
+    background-color: red;
+    border: 1px solid black;
+  }
+} //fine JUMBOTRON
+//-------------------------------------------
+#box-higher-lower {
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  //debug
+  height: 600px;
+
+  .higher , .lower {
+    margin: 0 auto;
+    max-width: 860px;
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+  }
+} // fine box-higher-lower
+//-------------------------------------------
+
+#element-left-and-right {
+  width: 100%;
+  height: 1000px;
+  background-color:rgb(236, 166, 61);
+
+  .row {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid black;
+  }
+
+}
