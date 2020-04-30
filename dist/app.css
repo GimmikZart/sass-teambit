@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 header {
@@ -35,7 +43,7 @@ header #navbar {
   height: 100%;
 }
 
-#jumbotron .left h2 {
+#jumbotron .left h1 {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
@@ -62,10 +70,11 @@ header #navbar {
   font-size: 13px;
 }
 
-#jumbotron .left a {
+#jumbotron .left #bottoni a {
   color: #58402c;
   text-decoration: none;
   font-size: 14px;
+  display: block;
 }
 
 #jumbotron .right {
@@ -90,8 +99,8 @@ header #navbar {
   height: 1px;
   width: 100%;
   max-width: 1150px;
-  background-color: #bdb5af;
   margin: 0 auto;
+  background-color: #bdb5af;
 }
 
 #box-higher-lower .megabox {
@@ -146,43 +155,185 @@ header #navbar {
   color: #58402c;
 }
 
-#box-higher-lower .lower {
-  margin: 0 auto;
-  max-width: 860px;
-  width: 100%;
-  height: 50%;
-  border: 1px solid black;
-}
-
 #element-left-and-right {
   width: 100%;
-  height: 1000px;
-  background-color: #eca63d;
+  padding-top: 80px;
 }
 
 #element-left-and-right .row {
   width: 100%;
-  height: 25%;
-  border-bottom: 1px solid black;
   display: flex;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
-#element-left-and-right .row .left,
+#element-left-and-right .row .rimpicciolisci {
+  width: 50%;
+}
+
+#element-left-and-right .row .flottatiadestra {
+  float: right;
+}
+
+#element-left-and-right .row a {
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+#element-left-and-right .row h3 {
+  font-size: 26px;
+  color: #58402c;
+}
+
+#element-left-and-right .row p {
+  font-size: 22px;
+  color: #58402c;
+  margin-top: 15px;
+}
+
+#element-left-and-right .row .figure {
+  text-align: center;
+}
+
+#element-left-and-right .row .figure .animal-example {
+  max-width: 270px;
+  margin-top: 40px;
+}
+
+#element-left-and-right .row .left {
+  width: 50%;
+  padding: 25px;
+}
+
+#element-left-and-right .row .left .tabs-example {
+  max-width: 768px;
+}
+
 #element-left-and-right .row .right {
   width: 50%;
-  border-left: 1px solid black;
+  padding: 25px;
+}
+
+#element-left-and-right .row .right .tabs-example {
+  max-width: 768px;
 }
 
 #get-started {
+  padding-top: 80px;
+  padding-bottom: 50px;
   width: 100%;
-  background-color: #b0955d;
-  height: 500px;
+  background-color: #ffe7d2;
+}
+
+#get-started h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #58402c;
+  line-height: 1.5;
 }
 
 #get-started .box {
-  width: 500px;
-  height: 500px;
-  background-color: blue;
+  max-width: 628px;
+  padding: 20px 20px 20px 40px;
+  margin: 35px auto;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid #bdb5af;
   margin: 0 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+#get-started .box p {
+  font-size: 16px;
+  color: #58402c;
+}
+
+#get-started #bottoni {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#get-started #bottoni button {
+  height: 35px;
+  padding: 0 20px;
+  border-radius: 7px;
+  background: #30488f;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#get-started #bottoni span {
+  margin: 0 5px;
+  color: #bdb5af;
+  font-size: 13px;
+}
+
+#get-started #bottoni a {
+  color: #58402c;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+footer {
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left {
+  width: 30%;
+  max-width: 390px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+footer .left p {
+  font-size: 18px;
+  color: #58402c;
+  font-weight: 600;
+}
+
+footer .right {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .right .lista {
+  width: 18%;
+}
+
+footer .right .lista span {
+  font-size: 1.125rem;
+  color: #58402c;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer .right .lista ul {
+  margin-top: 15px;
+}
+
+footer .right .lista li a {
+  line-height: 2.4;
+  text-decoration: none;
+  color: #58402c;
+  font-size: 14px;
 }
 

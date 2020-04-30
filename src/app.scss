@@ -1,15 +1,59 @@
+
+@mixin estetica-bottoni {
+  button {
+    height: 35px;
+    padding: 0 20px;
+    border-radius: 7px;
+    background: #30488f;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  span {
+    margin: 0 5px;
+    color: #bdb5af;
+    font-size: 13px;
+  }
+
+  a {
+    color: #58402c;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+  }
+}
+
+@mixin centratura-pagina {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
 
 //-------------------------------------------
 
 header {
-  max-width: 1150px;
-  margin: 0 auto;
+  @include centratura-pagina;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,8 +71,7 @@ header {
 //-------------------------------------------
 
 #jumbotron {
-  max-width: 1150px;
-  margin: 0 auto;
+  @include centratura-pagina;
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 20px;
@@ -38,7 +81,7 @@ header {
     width: 50%;
     height: 100%;
 
-    h2 {
+    h1 {
       font-size: 50px;
       font-weight: bold;
       margin-bottom: 30px;
@@ -49,28 +92,10 @@ header {
       margin-bottom: 40px;
     }
     #bottoni {
-      button {
-        height: 35px;
-        padding: 0 20px;
-        border-radius: 7px;
-        background: #30488f;
-        border: none;
-        color: white;
-        margin-bottom: 20px;
-      }
-
-      span {
-        margin: 0 5px;
-        color: #bdb5af;
-        font-size: 13px;
-      }
+      @include estetica-bottoni;
     } // fine bottoni
 
-    a {
-      color: #58402c;
-      text-decoration: none;
-      font-size: 14px;
-    } // fine a
+
 
   }// fine left
 
@@ -95,9 +120,9 @@ header {
   #border {
     height: 1px;
     width: 100%;
-    max-width: 1150px;
+    @include centratura-pagina;
     background-color: #bdb5af;
-    margin: 0 auto;
+
   }
 
   .megabox {
@@ -150,48 +175,172 @@ header {
         }
       }// fine div
     } // fine box
-  } // fine .higher
-
-  .lower {
-    margin: 0 auto;
-    max-width: 860px;
-    width: 100%;
-    height: 50%;
-    border: 1px solid black;
-  }// fine lower
+  } // fine megabox
 } // fine box-higher-lower
 //-------------------------------------------
 
 #element-left-and-right {
   width: 100%;
-  height: 1000px;
-  background-color:rgb(236, 166, 61);
+  padding-top: 80px;
 
   .row {
     width: 100%;
-    height: 25%;
-    border-bottom: 1px solid black;
     display: flex;
+    line-height: 1.5;
+    margin-bottom: 40px;
 
-    .left , .right {
+    .rimpicciolisci {
       width: 50%;
-      border-left: 1px solid black;
     }
 
-  }
+    .flottatiadestra {
+      float: right;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      margin-top: 20px;
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 26px;
+      color: #58402c;
+    }
+
+    p {
+      font-size: 22px;
+      color: #58402c;
+      margin-top: 15px;
+    }
+
+    .figure {
+      text-align: center;
+
+      .animal-example {
+        max-width: 270px;
+        margin-top: 40px;
+      }
+    } // fine figure
+
+    .left{
+      width: 50%;
+      padding: 25px;
+
+      .tabs-example {
+        max-width: 768px;
+      }
+    } // fine left
+
+    .right {
+      width: 50%;
+      padding: 25px;
+
+      .tabs-example {
+        max-width: 768px;
+      }
+    } // fine right
+  } // fine row
 } // fine element-left-and-right
 
 //-------------------------------------------
 
 #get-started {
+  padding-top: 80px;
+  padding-bottom: 50px;
   width: 100%;
-  background-color: rgb(176, 149, 93);
-  height: 500px;
+  background-color: #ffe7d2;
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #58402c;
+    line-height: 1.5;
+  }
 
   .box {
-    width: 500px;
-    height: 500px;
-    background-color: blue;
+    max-width: 628px;
+    padding: 20px 20px 20px 40px;
+    margin: 35px auto;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid #bdb5af;
     margin: 0 auto;
+    font-size: .875rem;
+    line-height: 1.5;
+
+    p {
+      font-size: 16px;
+      color: #58402c;
+    }
+  } // fine box
+
+  #bottoni {
+    text-align: center;
+    @include estetica-bottoni;
+    margin-top: 20px;
   }
 }// fine get-started
+
+footer {
+  @include centratura-pagina;
+  margin-top: 50px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: 30%;
+    max-width: 390px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    p{
+      font-size: 18px;
+      color: #58402c;
+      font-weight: 600;
+    }
+
+  }
+
+  .right {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+
+    .lista {
+      width: 18%;
+
+      span {
+        font-size: 1.125rem;
+        color: #58402c;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        margin-top: 15px;
+      }
+
+      li a{
+        line-height: 2.4;
+        text-decoration: none;
+        color: #58402c;
+        font-size: 14px;
+      }
+    }
+
+
+  }
+
+
+}
