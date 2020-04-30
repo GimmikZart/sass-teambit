@@ -1,0 +1,43 @@
+// jumbotron
+#jumbotron {
+  @include centratura-pagina;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  display: flex;
+
+  .left {
+    width: 50%;
+    height: 100%;
+
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: $colore-speciale-testo;
+    }
+
+    p {
+      font-size: 22px;
+      margin-bottom: 40px;
+      color: $colore-speciale-testo;
+    }
+    #bottoni {
+      @include estetica-bottoni;
+    } // fine bottoni
+
+
+
+  }// fine left
+
+  .right {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 570px;
+    } // fine img
+  } // fine .right
+} //fine JUMBOTRON

@@ -1,0 +1,45 @@
+
+
+
+// COLORI------------------------------------------------------
+$colore-sfondo: #ffe7d2;
+$colore-speciale-testo: #58402c;
+
+
+// MIX IN ----------------------------------------------------------------------
+@mixin estetica-bottoni {
+  button {
+    height: 35px;
+    padding: 0 20px;
+    border-radius: 7px;
+    background: #30488f;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  span {
+    margin: 0 5px;
+    color: #bdb5af;
+    font-size: 13px;
+  }
+
+  a {
+    color: $colore-speciale-testo;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+  }
+}
+//-----------------------------------------
+@mixin centratura-pagina {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+//-------------------------------------------
+
+@mixin flexa-between {
+  display: flex;
+  justify-content: space-between;
+}

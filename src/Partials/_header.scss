@@ -1,0 +1,16 @@
+
+// header
+
+header {
+  @include centratura-pagina;
+  @include flexa-between;
+  align-items: center;
+  // debug
+  height: 75px;
+  border-bottom: 1px solid grey;
+
+  #navbar {
+    width: 40%;
+    @include flexa-between;
+  }
+} // fine header

@@ -1,0 +1,67 @@
+// LEFT AND RIGHT
+
+#element-left-and-right {
+  width: 100%;
+  padding-top: 80px;
+
+  .row {
+    width: 100%;
+    display: flex;
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+    .rimpicciolisci {
+      width: 50%;
+      max-width: 450px;
+    }
+
+    .flottatiadestra {
+      float: right;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      margin-top: 20px;
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 26px;
+      color: $colore-speciale-testo;
+    }
+
+    p {
+      font-size: 22px;
+      color: $colore-speciale-testo;
+      margin-top: 15px;
+    }
+
+    .figure {
+      text-align: center;
+
+      .animal-example {
+        max-width: 270px;
+        margin-top: 40px;
+      }
+    } // fine figure
+
+    .left{
+      width: 50%;
+      padding: 25px;
+
+      .tabs-example {
+        max-width: 768px;
+      }
+    } // fine left
+
+    .right {
+      width: 50%;
+      padding: 25px;
+
+      .tabs-example {
+        max-width: 768px;
+      }
+    } // fine right
+  } // fine row
+} // fine element-left-and-right

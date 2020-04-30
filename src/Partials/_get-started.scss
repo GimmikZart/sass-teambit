@@ -1,0 +1,39 @@
+
+// GET STARTED
+
+#get-started {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: $colore-sfondo;
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    color: $colore-speciale-testo;
+    line-height: 1.5;
+  }
+
+  .box {
+    max-width: 628px;
+    padding: 20px 20px 20px 40px;
+    margin: 35px auto;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid #bdb5af;
+    margin: 0 auto;
+    font-size: .875rem;
+    line-height: 1.5;
+
+    p {
+      font-size: 16px;
+      color: $colore-speciale-testo;
+    }
+  } // fine box
+
+  #bottoni {
+    text-align: center;
+    @include estetica-bottoni;
+    margin-top: 20px;
+  }
+}// fine get-started

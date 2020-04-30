@@ -29,132 +29,6 @@ header #navbar {
   justify-content: space-between;
 }
 
-#jumbotron {
-  max-width: 1150px;
-  margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 20px;
-  display: flex;
-}
-
-#jumbotron .left {
-  width: 50%;
-  height: 100%;
-}
-
-#jumbotron .left h1 {
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-#jumbotron .left p {
-  font-size: 22px;
-  margin-bottom: 40px;
-}
-
-#jumbotron .left #bottoni button {
-  height: 35px;
-  padding: 0 20px;
-  border-radius: 7px;
-  background: #30488f;
-  border: none;
-  color: white;
-  margin-bottom: 20px;
-}
-
-#jumbotron .left #bottoni span {
-  margin: 0 5px;
-  color: #bdb5af;
-  font-size: 13px;
-}
-
-#jumbotron .left #bottoni a {
-  color: #58402c;
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-}
-
-#jumbotron .right {
-  width: 50%;
-  height: 100%;
-}
-
-#jumbotron .right img {
-  width: 100%;
-  height: 100%;
-  max-width: 570px;
-}
-
-#box-higher-lower {
-  width: 100%;
-  background-color: #ffe7d2;
-  display: flex;
-  flex-direction: column;
-}
-
-#box-higher-lower #border {
-  height: 1px;
-  width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
-  background-color: #bdb5af;
-}
-
-#box-higher-lower .megabox {
-  margin: 0 auto;
-  max-width: 860px;
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 80px;
-}
-
-#box-higher-lower .megabox img {
-  width: 280px;
-  margin: auto;
-}
-
-#box-higher-lower .megabox h2 {
-  padding-top: 80px;
-  text-align: center;
-  font-size: 26px;
-  width: 80%;
-  margin: 0 auto;
-  color: #58402c;
-}
-
-#box-higher-lower .megabox .box {
-  margin-top: 50px;
-  margin-bottom: 70px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#box-higher-lower .megabox .box div {
-  width: 25%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#box-higher-lower .megabox .box div img {
-  width: 145px;
-  height: 110px;
-}
-
-#box-higher-lower .megabox .box div p {
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 18px;
-  color: #58402c;
-}
-
 #element-left-and-right {
   width: 100%;
   padding-top: 80px;
@@ -169,6 +43,7 @@ header #navbar {
 
 #element-left-and-right .row .rimpicciolisci {
   width: 50%;
+  max-width: 450px;
 }
 
 #element-left-and-right .row .flottatiadestra {
@@ -279,6 +154,72 @@ header #navbar {
   display: block;
 }
 
+#box-higher-lower {
+  width: 100%;
+  background-color: #ffe7d2;
+  display: flex;
+  flex-direction: column;
+}
+
+#box-higher-lower #border {
+  height: 1px;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: #bdb5af;
+}
+
+#box-higher-lower .megabox {
+  margin: 0 auto;
+  max-width: 860px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+#box-higher-lower .megabox img {
+  width: 280px;
+  margin: auto;
+}
+
+#box-higher-lower .megabox h2 {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 26px;
+  width: 80%;
+  margin: 0 auto;
+  color: #58402c;
+}
+
+#box-higher-lower .megabox .box {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#box-higher-lower .megabox .box div {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#box-higher-lower .megabox .box div img {
+  width: 145px;
+  height: 110px;
+}
+
+#box-higher-lower .megabox .box div p {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #58402c;
+}
+
 footer {
   max-width: 1150px;
   margin: 0 auto;
@@ -335,5 +276,66 @@ footer .right .lista li a {
   text-decoration: none;
   color: #58402c;
   font-size: 14px;
+}
+
+#jumbotron {
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  display: flex;
+}
+
+#jumbotron .left {
+  width: 50%;
+  height: 100%;
+}
+
+#jumbotron .left h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #58402c;
+}
+
+#jumbotron .left p {
+  font-size: 22px;
+  margin-bottom: 40px;
+  color: #58402c;
+}
+
+#jumbotron .left #bottoni button {
+  height: 35px;
+  padding: 0 20px;
+  border-radius: 7px;
+  background: #30488f;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#jumbotron .left #bottoni span {
+  margin: 0 5px;
+  color: #bdb5af;
+  font-size: 13px;
+}
+
+#jumbotron .left #bottoni a {
+  color: #58402c;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+#jumbotron .right {
+  width: 50%;
+  height: 100%;
+}
+
+#jumbotron .right img {
+  width: 100%;
+  height: 100%;
+  max-width: 570px;
 }
 
