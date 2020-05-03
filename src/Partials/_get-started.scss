@@ -6,6 +6,15 @@
   padding-bottom: 50px;
   width: 100%;
   background-color: $colore-sfondo;
+  position: relative;
+
+  #quote {
+    position: absolute;
+    width: 37px;
+    height: 39px;
+    left: 638px;
+    top: 178px;
+  }
 
   h2 {
     text-align: center;

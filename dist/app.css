@@ -14,19 +14,65 @@
 }
 
 header {
-  max-width: 1150px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+  height: 60px;
   border-bottom: 1px solid grey;
 }
 
-header #navbar {
+header #centranav {
+  max-width: 1150px;
+  height: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #centranav #logo {
+  display: flex;
+}
+
+header #centranav #logo h1 {
+  font-size: 20px;
+}
+
+header #centranav #navbar {
   width: 40%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+header #centranav #navbar span {
+  font-size: 16px;
+  color: #58402c;
+}
+
+header #centranav #navbar span:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+header #centranav #navbar button {
+  border: 1px solid #30488f;
+  padding: 10px;
+  border-radius: 7px;
+  color: blue;
+  font-weight: bold;
+}
+
+header #centranav #navbar button img {
+  width: 16px;
+  height: 16px;
+}
+
+header #centranav #navbar button:hover {
+  background-color: #30488f;
+  color: white;
 }
 
 #element-left-and-right {
@@ -100,6 +146,15 @@ header #navbar {
   padding-bottom: 50px;
   width: 100%;
   background-color: #ffe7d2;
+  position: relative;
+}
+
+#get-started #quote {
+  position: absolute;
+  width: 37px;
+  height: 39px;
+  left: 638px;
+  top: 178px;
 }
 
 #get-started h2 {
@@ -164,8 +219,6 @@ header #navbar {
 #box-higher-lower #border {
   height: 1px;
   width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
   background-color: #bdb5af;
 }
 

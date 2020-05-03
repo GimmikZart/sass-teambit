@@ -2,15 +2,64 @@
 // header
 
 header {
-  @include centratura-pagina;
-  @include flexa-between;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: white;
   // debug
-  height: 75px;
+  height: 60px;
   border-bottom: 1px solid grey;
 
-  #navbar {
-    width: 40%;
+
+  #centranav {
+    max-width: 1150px;
+    height: 100%;
+    @include centratura-pagina;
+    align-items: center;
     @include flexa-between;
+
+    #logo{
+      display: flex;
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    #navbar {
+      width: 40%;
+      @include flexa-between;
+      align-items: center;
+
+      span {
+        font-size: 16px;
+        color: $colore-speciale-testo;
+
+        &:hover{
+          color: blue;
+          cursor: pointer;
+        }
+      }
+
+      button {
+        border: 1px solid #30488f;
+        padding: 10px;
+        border-radius: 7px;
+        color: blue;
+        font-weight: bold;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+
+        &:hover {
+          background-color: #30488f;
+          color: white;
+        }
+      }
+    }
   }
+
+
 } // fine header
